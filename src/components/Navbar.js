@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <header className="bg-gradient-to-r from-blue-700 to-blue-900 text-white shadow-md">
+    <header className="bg-gradient-to-r from-blue-600 to-blue-900 text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         
         <div className="text-2xl font-bold cursor-pointer">
