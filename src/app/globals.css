@@ -10,3 +10,9 @@ body {
 ul {
   list-style: none;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
