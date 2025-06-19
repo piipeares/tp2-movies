@@ -22,7 +22,6 @@ const Navbar = () => {
   return (
     <header className="bg-gradient-to-r from-black via-gray-900 to-gray-950 text-white shadow-lg border-b-4 border-yellow-400">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-2 text-2xl font-bold tracking-wide cursor-pointer hover:text-yellow-400 transition-colors duration-300"
@@ -31,9 +30,8 @@ const Navbar = () => {
           MovieApp
         </Link>
 
-        {/* Nav y Buscador */}
         <nav className="flex items-center space-x-6">
-          {/* Formulario de búsqueda */}
+      
           <form onSubmit={handleSubmit} className="relative">
             <div className="flex items-center bg-white/10 backdrop-blur-md px-3 py-1 rounded-full shadow-md border border-white/20">
               <input
@@ -52,7 +50,6 @@ const Navbar = () => {
             </div>
           </form>
 
-          {/* Links de navegación */}
           <ul className="flex space-x-6 text-lg font-medium">
             <li>
               <Link
