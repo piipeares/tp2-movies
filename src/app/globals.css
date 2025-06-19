@@ -4,7 +4,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #292929;
 }
 
 ul {
@@ -15,4 +14,16 @@ ul {
   display: none;
 }
 
+@keyframes fade-simple {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-simple {
+  animation: fade-simple 0.8s ease-out forwards;
+}
 

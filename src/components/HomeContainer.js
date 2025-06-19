@@ -1,4 +1,5 @@
 import MoviesRow from "@/components/MoviesRow";
+import Hero from "@/components/Hero";
 
 const popularGenres = [
   { id: 28, name: "Acción" },
@@ -25,11 +26,13 @@ export default async function HomeContainer() {
   );
 
   return (
-    <div className="p-4 space-y-10">
-      <h1 className="text-3xl font-bold text-white mb-6">Películas por género</h1>
-      {moviesByGenre.map(({ id, name, movies }) => (
-        <MoviesRow key={id} genreName={name} movies={movies} />
-      ))}
+    <div className="relative min-h-screen text-white bg-gray-950">
+      <Hero />
+      <div className="px-6 py-10 space-y-16">
+        {moviesByGenre.map(({ id, name, movies }) => (
+          <MoviesRow key={id} genreName={name} movies={movies} />
+        ))}
+      </div>
     </div>
   );
 }
